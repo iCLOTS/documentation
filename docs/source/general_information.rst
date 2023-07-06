@@ -26,6 +26,7 @@ Computational methods adapt to microscopy images and videomicroscopy of cells an
    * Traditional flow chamber devices
 
 |
+
 * iCLOTS is a post-processing image analysis software. Users can continue to acquire imaging data using the methods they are accustomed to, and as such iCLOTS can be used with both previously collected data or new assays planned with the software's capabilities in mind.
 
 |
