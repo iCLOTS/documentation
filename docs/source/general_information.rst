@@ -1,4 +1,4 @@
-Getting started
+General information about iCLOTS
 =====
 
 .. _iCLOTS basics:
