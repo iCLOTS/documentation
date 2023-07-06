@@ -31,6 +31,8 @@ Computational methods adapt to microscopy images and videomicroscopy of cells an
    * Multiscale microfluidic accumulation applications, useful for insight into pathologic processes such as occlusion and obstruction in thrombosis.
 * A suite of file pre-processing applications assists users with preparing their data for analysis. Type of file required is specific to each application and is provided in the documentation below.
 
+.. _outputs:
+
 Output files
 ----------------
 
@@ -49,7 +51,9 @@ Should the user need further interpretation of their results, the produced Excel
 * Machine learning clustering algorithms are an unsupervised approach designed to detect and mathematically characterize natural groupings and patterns within complex datasets, e.g. healthy/clinical sample dichotomies or subpopulations from a single sample.
 * iCLOTS implements k-means clustering algorithms, understood to be a strong general-purpose approach to clustering, where each data point is assigned a cluster label.
 
-Interactive format
+.. _interactive design:
+
+Interactive design
 ----------------
 
 All iCLOTS applications follow a common, easy-to-use interactive format.
@@ -79,6 +83,8 @@ Output files include:
 * Graphical results as .png images
 * The initial imaging dataset as transformed by the image processing algorithms and/or labeled with indices.
 * Videos are returned as individual, sequentially numbered frames.
+
+.. _experimental considerations:
 
 Experimental considerations
 ----------------
