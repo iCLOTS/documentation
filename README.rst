@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
+Documentation for iCLOTS software
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This documentation includes notes on using iCLOTS, from inputs, parameters, and outputs to computational and experimental tips and tricks.
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+iCLOTS is created for all researchers and clinicians, including those without extensive computational experience. Please feel free to contact us at help@iCLOTS.org or using the contact page on our `website <https://www.iclots.org/>`_.
