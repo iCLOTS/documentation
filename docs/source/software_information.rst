@@ -1,16 +1,16 @@
 Software information
-=====================
+=======================
 
 .. _source code:
 
 Accessing source code
-------------------------
+--------------------------
 
-| iCLOTS `source code <https://github.com/iCLOTS>`_ and `standalone methods <https://github.com/LamLabEmory>`_ are freely available. 
+| iCLOTS `software source code <https://github.com/iCLOTS>`_ and `standalone methods <https://github.com/LamLabEmory>`_ are freely available. 
 
 | All code is licensed under the Apache License 2.0, a standard open-source license. `Our project github account <https://www.github.com/iCLOTS>`_ also includes a code of conduct and contributing information, files standard to open-source projects.
 
-| Version 0.1.1 is being released as a beta version, a version of a piece of software that is made available for testing, typically by a group of users outside the development team, before a formal release. As such, your feedback is especially valuable. As iCLOTS continues to grow, all versions of iCLOTS will be maintained at `our website <https://www.iCLOTS.org>`_.
+| Version 0.1.1 is being released as a beta version, a version of a piece of software that is made available for testing, typically by a group of users outside the development team, before a formal release. As such, your feedback is especially valuable. As iCLOTS continues to grow, all versions of iCLOTS will be maintained at `the project website <https://www.iCLOTS.org>`_.
 
 | iCLOTS is built for 64-bit operating systems and requires at least 8 GB of RAM, with more suggested for larger datasets.
 
@@ -19,7 +19,7 @@ Accessing source code
 .. _open source:
 
 Open source packages utilized
--------------------------------
+----------------------------------
 
 iCLOTS is a Python-based software built upon many successful open-source packages, including:
 
@@ -38,18 +38,18 @@ iCLOTS is a Python-based software built upon many successful open-source package
 .. _other projects:
 
 Excellent other software projects
----------------------------
+------------------------------------
 
 | The iCLOTS development team would also like to acknowledge several open-source software products that served as an inspiration and guide during the creation of this project. Depending on your analysis goals, you might find these pieces of software more suitable for your own analysis:
 
-* ilastik, useful for advanced image segmentation (`website <https://www.ilastik.org/>`_, appropriate citation: Berg S, Kutra D, Kroeger T, et al. ilastik: interactive machine learning for (bio)image analysis. Nature Methods. 2019;16(12):1226-1232.)
-* CellProfiler, useful for advanced cell morphology metrics (`website <https://cellprofiler.org/>`_, appropriate citations: Lamprecht MR, Sabatini DM, Carpenter AE. CellProfiler: free, versatile software for automated biological image analysis. Biotechniques. 2007;42(1):71-75. and/or Stirling DR, Swain-Bowden MJ, Lucas AM, Carpenter AE, Cimini BA, Goodman A. CellProfiler 4: improvements in speed, utility and usability. BMC Bioinformatics. 2021;22(1):433.)
-* ImageJ and FIJI, strong multi-purpose image analysis toolkits (`website <https://imagej.nih.gov/ij/>`_, recent citation: Schneider CA, Rasband WS, Eliceiri KW. NIH Image to ImageJ: 25 years of image analysis. Nature Methods. 2012;9(7):671-675.)
+* ilastik, useful for advanced image segmentation (`ilastik website <https://www.ilastik.org/>`_, appropriate citation: Berg S, Kutra D, Kroeger T, et al. ilastik: interactive machine learning for (bio)image analysis. Nature Methods. 2019;16(12):1226-1232.)
+* CellProfiler, useful for advanced cell morphology metrics (`CellProfiler website <https://cellprofiler.org/>`_, appropriate citations: Lamprecht MR, Sabatini DM, Carpenter AE. CellProfiler: free, versatile software for automated biological image analysis. Biotechniques. 2007;42(1):71-75. and/or Stirling DR, Swain-Bowden MJ, Lucas AM, Carpenter AE, Cimini BA, Goodman A. CellProfiler 4: improvements in speed, utility and usability. BMC Bioinformatics. 2021;22(1):433.)
+* ImageJ and FIJI, strong multi-purpose image analysis toolkits (`ImageJ website <https://imagej.nih.gov/ij/>`_, recent citation: Schneider CA, Rasband WS, Eliceiri KW. NIH Image to ImageJ: 25 years of image analysis. Nature Methods. 2012;9(7):671-675.)
 
 .. _data availability:
 
 Data availability
--------------------
+----------------------
 
 | A limited set of test data for every application is available on `github <https://github.com/LamLabEmory>`_ and `our website <https://www.iCLOTS.org/software>`_ (located under software files). This set of test data is designed to demonstrate software capabilities using real-world data. 
 
