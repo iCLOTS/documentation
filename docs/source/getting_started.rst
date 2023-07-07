@@ -1,9 +1,11 @@
 Getting started
 ================
 
-iCLOTS is available both as a Mac-based .app file and a Windows-based .exe file. 
-iCLOTS current version 0.1.1 is written in Python 3.7 and packaged natively using the open-source library Pyinstaller version 5.6.2. iCLOTS has been designed as a standalone software to reach the widest range of users possible and for potential use in clinical environments. As such, no supporting software or software dependencies are required. No additional resources are needed to run the program.
-iCLOTS is installed simply by downloading the appropriate files. Some users received errors downloading the software from the website using Microsoft Edge browser, and as such, the development team suggests using Google Chrome to download the software from the website.
+| iCLOTS is available both as a Mac-based .app file and a Windows-based .exe file. 
+
+| iCLOTS current version 0.1.1 is written in Python 3.7 and packaged natively using the open-source library Pyinstaller version 5.6.2. iCLOTS has been designed as a standalone software to reach the widest range of users possible and for potential use in clinical environments. As such, no supporting software or software dependencies are required. No additional resources are needed to run the program.
+
+| iCLOTS is installed simply by downloading the appropriate files. Some users received errors downloading the software from the website using Microsoft Edge browser, and as such, the development team suggests using Google Chrome to download the software from the website.
 
 
 
