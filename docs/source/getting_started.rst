@@ -25,7 +25,7 @@ On Mac OS, users click the tar.gz distribution file available `on our software p
 |
 | The development team has taken the necessary steps to identify ourselves as legitimate developers. Upon opening for the first time, you may be alerted that this is a software downloaded from the internet. This is common to most open-source projects, including other bioimage analysis software like Ilastik and CellProfiler. You may also be alerted that we are a new team of developers, and asked if you trust the source of this software. The source of the software is attributed to Meredith Fay, iCLOTS lead developer. Please see a sample alert window produced by opening the software for the first time below:
 
-.. image:: documentation/docs/images/mac_warning.png
+.. image:: images/mac_warning.png
   :width: 600
   :alt: Mac OS potential warning
 
