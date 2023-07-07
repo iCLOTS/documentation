@@ -14,7 +14,7 @@ Getting started
 Downloading and opening iCLOTS in Mac OS
 ------------------------------------------
 
-On Mac OS, users click the tar.gz distribution file available `on our software page <https://www.iclots.org/software>`_ to open, then click the .app file to start the software.
+| On Mac OS, users click the tar.gz distribution file available `on our software page <https://www.iclots.org/software>`_ to open, then click the .app file to start the software.
 
 | iCLOTS .app file has been developed on Mac OS Monterrey version 12.5.1, but has been tested on other Mac OS, including Catalina and Ventura. 
 
@@ -26,9 +26,23 @@ On Mac OS, users click the tar.gz distribution file available `on our software p
   :width: 600
   :alt: Mac OS potential warning
 
+| During testing, all software users received and accepted these messages, with no negative effect to their computers.
+
 .. _Windows OS downloads:
 
 Downloading and opening iCLOTS in Windows OS
 ---------------------------------------------
 
-Stay tuned!
+| iCLOTS .exe file has been developed on Windows version 11, but has been tested on other Windows versions, including Windows version 10.
+
+| The software is approximately ~150 MB, so may take 1-10 minutes to download, depending on internet speed. iCLOTS will take an additional 1-5 minutes to open, particularly for first time use. 
+
+| The development team has taken the necessary steps to identify ourselves as legitimate developers to Windows OS. Upon opening for the first time, you may be alerted that Windows has protected your PC. Over time, as the iCLOTS development team develops a positive relationship with Windows, this window will no longer open upon downloading. There is an option to click "More info" (image 1, below) and "Run anyways" (image 2, below) from the message window. The source of the software may will be attributed to Meredith Fay. 
+
+| In rare cases where the user does not have adminstrative privileges on their computer, there may not be an option to "Run anyways." In this case, users should right-click on the download, select "Properties," and select to unblock the application (image 3, below). If issues with download persist, please feel free to contact the development team.
+
+.. image:: images/windows_warning.png
+  :width: 800
+  :alt: Windows OS potential warnings
+
+| During testing, all software users received and accepted these messages, with no negative effect to their computers.
