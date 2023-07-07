@@ -16,3 +16,4 @@ Contents
 
    general_information
    getting_started
+   adhesion
