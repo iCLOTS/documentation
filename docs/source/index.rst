@@ -17,3 +17,4 @@ Contents
    general_information
    getting_started
    adhesion
+   software_information
