@@ -6,7 +6,7 @@ General information about iCLOTS
 General information
 --------------------
 
-iCLOTS software generates quantitative metrics from microscopy data obtained during use of a wide range of microfluidic and static assays.
+| iCLOTS software generates quantitative metrics from microscopy data obtained during use of a wide range of microfluidic and static assays.
 
 | Computational methods adapt to microscopy images and videomicroscopy of cells and cell solutions in a variety of common assay formats.
 
