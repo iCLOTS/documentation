@@ -76,7 +76,39 @@ Tabular data includes:
 
 Graphical results as .png images:
 
+.. class:: center
+
+.. image:: images/adhesion_graphs.png
+  :width: 300
+  :alt: Sample graphs from adhesion application
+
+*Metrics plotted for easy, quick interpretation*
+
+.. class:: center
+
+.. image:: images/adhesion_pairplots.png
+  :width: 400
+  :alt: Sample pairplots from adhesion application
+
+*Pairplots for quick interpretation of relationships between variables*
+
+.. class:: center
+
+.. image:: images/adhesion_color_pairplots.png
+  :width: 500
+  :alt: Sample pairplots from adhesion application, multi-sample
+
+*Pairplots for quick interpretation of relationships between images or conditions*
+
 The initial imaging dataset as transformed by the image processing algorithms and/or labeled with indices. Videos are returned as individual, sequentially numbered frames:
+
+.. class:: center
+
+.. image:: images/adhesion_labeled.png
+  :width: 400
+  :alt: Sample image labeling
+
+*Images are labeled with indices corresponding to the Excel sheet*
 
 | The development team would like users to keep in mind that computational analysis is never perfect - some spurious features are to be expected. Users might find these data points don't significantly affect their conclusions or may find that manually removing obvious outliers is less time consuming than performing the analysis by hand.
 
