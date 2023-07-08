@@ -6,7 +6,7 @@ Single cell tracking applications
 | The current version of the iCLOTS single cell tracking application provides an overall distance traveled, which is calculated from the first instance to the last instance as a straight line. Planned updates include frame-by-frame resolution, more precise directionality, and measures of acceleration.
 
 
-.. _brightfield:
+.. _brightfield sct:
 
 Brightfield microscopy single cell tracking
 ------------------------------------------------
@@ -84,7 +84,7 @@ Learn more about the methods forming the basis of our single cell tracking appli
 
   * `Trackpy documentation/tutorial <http://soft-matter.github.io/trackpy/v0.5.0/tutorial/walkthrough.html>`_
 
-.. fluorescence:
+.. fluorescence sct:
 
 Fluorescence microscopy single cell tracking
 -----------------------------------------------
