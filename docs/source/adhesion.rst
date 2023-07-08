@@ -112,7 +112,7 @@ Parameters to interactively adjust:
 Output metrics:
 
 * Resolution: single-cell
-* Metrics from membrane stain: area (pixels, µm²), circularity (a.u.), texture (a.u.)
+* Metrics from membrane stain: area (pixels, µm²), circularity (a.u.), texture (a.u.).
 
   * Circularity ranges from 0 (straight line) to 1 (perfect circle).
   * Texture is the standard deviation of all pixel intensity values within one cell, a method for describing membrane heterogeneity.
@@ -124,6 +124,7 @@ Output files:
 
 * All files are saved in a new folder titled "Results," located within the folder the original imaging data was selected from.
 * Labeled imaging data: each original image with each detected cell labeled with an index. Each index corresponds to single-cell data within the optional numerical data exports.
+
 * An Excel file containing:
 
   * Area, circularity, texture, and functional stain metrics for each cell - one sheet/image.
@@ -170,3 +171,99 @@ Learn more about the methods forming the basis of our fluorescence microscopy ad
 
   * Relevant citation: van der Walt S, Schönberger JL, Nunez-Iglesias J, et al. scikit-image: image processing in Python. PeerJ. 2014;2:e453. 
   * `Documentation/tutorial for scikit-image region analysis <https://scikit-image.org/docs/stable/auto_examples/segmentation/plot_regionprops.html>`_
+
+.. filopodia:
+
+Filopodia and protrusion counter
+--------------------------------------
+
+| iCLOTS includes a specialized version of the fluorescence microscopy application designed to count and characterize filopodia at single-cell resolution. The Lam lab has found that it can be hard to objectively count filopodia. iCLOTS applies the same parameters (how distinct a filopodia must be, minimum distance from other leading edges) to an image or series of images to reduce this objectivity. Number of filopodia per cell and descriptive statistics describing filopodia length per cell (minimum, mean, maximum, standard deviation) are reported in addition to cell area and membrane texture.
+
+
+Input files:
+
+* This application is designed to analyze a single image or a folder of image files (.jpg, .png, and/or .tif)
+* The same input parameters are applied to each image.
+* Users are lead to select a color channel that indicates the cell membrane or area/morphology (red, green, blue, or grayscale/white).
+* Future versions of iCLOTS will also incorporate methods for quantifying a secondary stain indicating some biological character or process as well.
+
+Parameters to interactively adjust:
+
+* µm-to-pixel ratio: The ratio of microns (1e-6 m) to pixels for the image, used to convert pixel measurements into area or distance dimensions. Use 1 for no conversion.
+* Minimum area: The minimum area (pixels) of a region (ideally, a cell) to be quantified. This can be used to filter out obvious noise.
+* Maximum area: The maximum area (pixels) of a region to be quantified. This can be used to filter out obvious debris or cell clusters.
+* Membrane stain threshold: Integer between 0 (black) and 255 (white/brightest) to be used for the main channel threshold. Any value below this threshold becomes background. Any value greater than or equal to this threshold becomes signal to further quantify.
+* Harris corner detection parameters: parameters necessary to detect the sharp "corners" created by filopodia in an image.
+
+ * Corner sharpness : arbitrary unit parameter ranging from 0 to 0.2, with 0 indicating you'd like the most defined filopodia only.
+ * Relative intensity: arbitrary unit parameter  representing the minimum intensity of "peaks," calculated as the maximum value within the image multiplied by this relative threshold.
+ * Minimum distance: minimum distance between detected filopodia (pix), also used with the peak finding algorithm.
+
+
+Output metrics:
+
+* Resolution: single-cell
+* Metrics include: area (pixels, µm²), circularity (a.u.), texture (a.u.), filopodia count (n), minimum/mean/maximum/standard deviation of length of all individual filopodia (if any) per cell.
+
+ * Circularity ranges from 0 (straight line) to 1 (perfect circle).
+ * Texture is the standard deviation of all pixel intensity values within one cell, a method for describing membrane heterogeneity.
+ * Length of filopdodia is calculated as the distance of a detected filopodia end point to the centroid of the cell shape. You may want to normalize filopodia length to the area of the cell: a large cell will also have a larger mean distance.
+ * Future versions of this application will give individual lengths as a vector. This may be useful for detecting directed response to some localized stimuli.
+
+
+Output files:
+
+* All files are saved in a new folder titled "Results," located within the folder the original imaging data was selected from.
+* Labeled imaging data: each original image and each image with the membrane threshold applied with each detected cell labeled with an index. Each index corresponds to single-cell data within the optional numerical data exports.
+
+An Excel file containing:
+
+* Area, circularity, texture, and filopodia metrics for each cell - one sheet/image.
+* Area, circularity, texture, and filopodia metrics for all cells - one sheet (this combined sheet is best for analyzing replicates)/all files.
+* Descriptive statistics (minimum, mean, maximum, standard deviation values for area, circularity, texture, and filopodia metrics) for individual files and combined files. Cell density (n/mm²) is also provided.
+* Parameters used and time/date analysis was performed, for reference.
+
+Graphical data:
+
+* Histogram graphs for filopodia per cell and mean filopodia length for each individual image.
+* Pairplot graph for each individual image, for all images combined where one color represents all pooled data, and for all images combined where each color represents a different image file.
+
+Some tips from the iCLOTS team:
+
+* Computational and experimental methods:
+
+ * We suggest a high microscopy magnification for this application, iCLOTS was tested on 100x magnification images.
+ * For all fluorescence microscopy applications, each stain to quantify must be solely in one red/green/blue channel, no other colors are accepted in the current version of iCLOTS. See the export options on your microscopy acquisition software.
+ * After application of the thresholds, the image processing algorithms analyze each interconnected region of signal as a cell. The application cannot distinguish between overlapping cells. If cells are significantly overlapping, please repeat the experiment with a lower cell concentration.
+ * Searching for individual filopodia can be computationally expensive. Analysis for filopodia may take longer than other iCLOTS adhesion applications.
+
+* Choosing parameters:
+
+ * Be sure to use µm-to-pixel ratio, not pixel-to-µm ratio.
+ * Sometimes cells (e.g., activated platelets) have a high-intensity "body" and low-intensity spreading or protrusions. Choose a low threshold, by counting filopodia you're primarily quantifying the morphology of the cells.
+ * Err on the high side of maximum area and low side of minimum area parameters unless data is particularly noisy or there's a large amount of debris.
+ * If you're unsure if what parameter values to select, run the analysis with an artificially high maximum area and low minimum area and compare indexed cells to the resultant metrics - for example, perhaps you see a cluster typically has an area greater than "x" so you set maximum area slightly lower, and obvious noise typically has an area less than "y" so you set minimum area slightly higher.
+ * It can be tricky to adjust all three  Harris corner detection parameters to get a roughly accurate filopodia count. We suggest doing a sensitivity analysis (trying a wide range of parameters and comparing results). Ideally, conclusions are not significantly affected by small changes in parameters.
+
+* Output files:
+
+ * Analysis files are named after the folder containing all images (.xlsx) or image names (.png). Avoid spaces, punctuation, etc. within file names
+ * In use cases where several files are analyzed, individual sheets are named after individual files. These file names may be cropped to about 15 characters to prevent corrupting the output file. Please make sure individual files within a folder are named sufficiently differently.
+ * Excel and pairplot data includes a sheet/graph with all images combined. Only use this when analyzing replicates of the same sample.
+ * No intensity metrics are reported from the membrane color in the current version of iCLOTS, as this color should indicate morphology only.
+
+Learn more about the methods forming the basis of our filopodia counting microscopy adhesion application:
+
+* Harris corner detection:
+
+ * Relevant citation: Harris, C. & Stephens, M. in Proceedings of Fourth Alvey Vision Conference    147—151 (1988).
+
+* Region analysis via python library scikit-image: 
+
+ * Relevant citation: van der Walt S, Schönberger JL, Nunez-Iglesias J, et al. scikit-image: image processing in Python. PeerJ. 2014;2:e453. 
+ * `Documentation/tutorial for scikit-image region analysis (also above) <https://scikit-image.org/docs/stable/auto_examples/segmentation/plot_regionprops.html>`_
+
+* Application of corner detection via python library OpenCV: 
+
+ * Relevant citation: Bradski, G. The OpenCV Library. Dr. Dobb’s Journal of Software Tools 2000 (2000).
+ * `Documentation/tutorial for corner detection <https://docs.opencv.org/3.4/dc/d0d/tutorial_py_features_harris.html>`_
