@@ -44,6 +44,40 @@ Each application produces detailed output files specific to the application used
 * Metrics are given for every feature or cell (single-cell resolution) and can be traced back to the original image using the labeled index.
 * iCLOTS may produce a large amount of data. In an effort to help researchers quickly make sense of their imaging dataset, iCLOTS automatically graphs results from the image processing analysis in common formats such as histograms or scatter plots.
 
+**Output files include:**
+
+Tabular data as an Excel file. In applications where several files are analyzed, individual sheets are named after individual files. These file names may be cropped to about 15 characters to prevent corrupting the output file. Please make sure individual files within a folder are named sufficiently differently.
+
+Tabular data includes:
+
+.. class:: center
+
+.. image:: images/adhesion_metrics.png
+  :width: 600
+  :alt: Sample metrics from adhesion application
+
+*Raw data for individual cells*
+
+.. class:: center
+
+.. image:: images/adhesion_desc_stats.png
+  :width: 800
+  :alt: Sample descriptive statistics from adhesion application
+
+*Descriptive statistics for all images or samples within dataset*
+
+.. class:: center
+
+.. image:: images/adhesion_parameters.png
+  :width: 500
+  :alt: Sample parameters from adhesion application
+
+*Parameters used for later reference*
+
+Graphical results as .png images:
+
+The initial imaging dataset as transformed by the image processing algorithms and/or labeled with indices. Videos are returned as individual, sequentially numbered frames:
+
 | The development team would like users to keep in mind that computational analysis is never perfect - some spurious features are to be expected. Users might find these data points don't significantly affect their conclusions or may find that manually removing obvious outliers is less time consuming than performing the analysis by hand.
 
 | Should the user need further interpretation of their results, the produced Excel files can be used in the machine learning-based clustering application. Machine learning is a subset of artificial intelligence. Machine learning clustering algorithms are an unsupervised approach designed to detect and mathematically characterize natural groupings and patterns within complex datasets, e.g. healthy/clinical sample dichotomies or subpopulations from a single sample. iCLOTS implements k-means clustering algorithms, understood to be a strong general-purpose approach to clustering, where each data point is assigned a cluster label.
@@ -73,13 +107,6 @@ The "Run analysis" button on the top right of the analysis screen initiates the 
 * Typically an analysis takes seconds-to-minutes - this depends heavily on file size and number.
 * If analysis, particularly of video files, is taking more than 3-5 minutes, consider reducing the resolution or length of files using the video editing suite. 
 * Graphical results are automatically displayed when the analysis is complete.
-
-Output files include:
-
-* Tabular data as an Excel file. In applications where several files are analyzed, individual sheets are named after individual files. These file names may be cropped to about 15 characters to prevent corrupting the output file. Please make sure individual files within a folder are named sufficiently differently.
-* Graphical results as .png images
-* The initial imaging dataset as transformed by the image processing algorithms and/or labeled with indices.
-* Videos are returned as individual, sequentially numbered frames.
 
 .. _experimental considerations:
 
