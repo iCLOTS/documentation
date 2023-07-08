@@ -7,8 +7,8 @@ Adhesion applications
 
 .. _brightfield:
 
-Brightfield microscopy
-----------------------------------
+Brightfield microscopy adhesion
+-------------------------------------
 
 | Application that analyzes static, brightfield images of cells or multicellular structures adhered to some surface. May also be suitable for use with preliminary digital pathology approaches, e.g. with blood smears. This application does not separate cells by type, but you could use the post-processing machine learning clustering algorithm to group cells.
 
@@ -88,8 +88,8 @@ Learn more about the methods forming the basis of our brightfield microscopy adh
 
 .. _fluorescence:
 
-Fluorescence microscopy
-----------------------------------
+Fluorescence microscopy adhesion
+-------------------------------------
 
 | Application that analyzes static, fluorescence microscopy images of cells (tested extensively on platelets, RBCs, and WBCs) adhered to some surface. This application does not separate cells by type, but you could use the post-processing machine learning clustering algorithm to group cells.
 
