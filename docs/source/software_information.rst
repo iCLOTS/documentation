@@ -37,7 +37,7 @@ iCLOTS is a Python-based software built upon many successful open-source package
 
 .. _other projects:
 
-Excellent other software projects
+Other excellent software projects
 ------------------------------------
 
 | The iCLOTS development team would also like to acknowledge several open-source software products that served as an inspiration and guide during the creation of this project. Depending on your analysis goals, you might find these pieces of software more suitable for your own analysis:
