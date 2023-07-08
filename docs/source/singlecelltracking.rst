@@ -1,5 +1,5 @@
 Single cell tracking applications
-======================
+====================================
 
 | This series of applications track one or many cells within a frame using adapted Crocker and Grier particle tracking methods. Cells are linked into individual trajectories. Cells can travel in any direction(s). iCLOTS provides a distance traveled, transit time, and velocity (distance/time) for each tracked cell. Typically this application would be used to track cells transiting a microfluidic device, but other uses may be possible. A specialized application analyzes fluorescence microscopy videos of cells transiting any device (see below). A separate specialized application analyzes instances of channel flow, where cells are traveling only in the x-direction.
 
@@ -8,8 +8,8 @@ Single cell tracking applications
 
 .. _brightfield:
 
-Brightfield microscopy
-----------------------------------
+Brightfield microscopy single cell tracking
+------------------------------------------------
 
 | The brightfield microscopy sub-application of the single cell tracking algorithm tracks cells within brightfield video microscopy.
 
@@ -86,8 +86,8 @@ Learn more about the methods forming the basis of our single cell tracking appli
 
 .. fluorescence:
 
-Fluorescence microscopy
-----------------------------------
+Fluorescence microscopy single cell tracking
+-----------------------------------------------
 
 | This application works in the same way as our single cell tracking image processing application for brightfield microscopy videos, but with an added fluorescence cell intensity output metric to describe the summed intensity of individual cells within a fluorescence microscopy video.
 
