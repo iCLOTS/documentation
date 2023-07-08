@@ -5,7 +5,7 @@ Adhesion applications
 
 | Several sub-applications exist, all described below, including applications specialized for static brightfield microscopy, static fluorescence microscopy, a specialized protrusion/filopodia counter, and a transient adhesion application to analyze videos.
 
-.. _brightfield:
+.. _brightfield adh:
 
 Brightfield microscopy adhesion
 -------------------------------------
@@ -86,7 +86,7 @@ Learn more about the methods forming the basis of our brightfield microscopy adh
 
   * `Documentation/tutorial for Trackpy <http://soft-matter.github.io/trackpy/v0.5.0/tutorial/walkthrough.html>`_
 
-.. _fluorescence:
+.. _fluorescence adh:
 
 Fluorescence microscopy adhesion
 -------------------------------------
