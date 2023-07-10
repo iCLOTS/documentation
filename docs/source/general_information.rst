@@ -14,21 +14,21 @@ General information
 
 | The presented tools can be applied to other fields who share the same objective of tracking single cell or body features or conditions as a function of time. The development team has also tested iCLOTS adapted algorithms on additional cell types and on multicellular structures.
 
-| iCLOTS can accomdate data obtained using a wide variety of experimental set ups and devices, including:
+iCLOTS can accomdate data obtained using a wide variety of experimental set ups and devices, including:
 
- * Standard microscopy slide or dish assays
- * Custom-made microfluidics
- * Commercially available microfluidics
- * Traditional flow chamber devices
+* Standard microscopy slide or dish assays
+* Custom-made microfluidics
+* Commercially available microfluidics
+* Traditional flow chamber devices
 
 | iCLOTS is a post-processing image analysis software. Users can continue to acquire imaging data using the methods they are accustomed to, and as such iCLOTS can be used with both previously collected data or new assays planned with the software's capabilities in mind.
 
-| Image processing capabilities are separated into four main categories, with sub-applications for each:
+Image processing capabilities are separated into four main categories, with sub-applications for each:
 
- * Adhesion applications, useful for single-cell resolution measures of biological functionality.
- * Single cell tracking applications, useful for single-cell velocity measurements, typically as they flow through a microfluidic device. Video frames may contain multiple cells at once.
- * Velocity profile applications, useful for investigating rheological properties of suspensions under flow. Minimum, mean, and maximum velocity values for each video frame are also provided, suitable for monitoring changes in cell suspension speed.
- * Multiscale microfluidic accumulation applications, useful for insight into pathologic processes such as occlusion and obstruction in thrombosis.
+* Adhesion applications, useful for single-cell resolution measures of biological functionality.
+* Single cell tracking applications, useful for single-cell velocity measurements, typically as they flow through a microfluidic device. Video frames may contain multiple cells at once.
+* Velocity profile applications, useful for investigating rheological properties of suspensions under flow. Minimum, mean, and maximum velocity values for each video frame are also provided, suitable for monitoring changes in cell suspension speed.
+* Multiscale microfluidic accumulation applications, useful for insight into pathologic processes such as occlusion and obstruction in thrombosis.
 
 | A suite of file pre-processing applications assists users with preparing their data for analysis. Type of file required is specific to each application and is provided in the documentation below.
 
@@ -58,15 +58,11 @@ Tabular data includes:
 
 *Raw data for individual cells*
 
-.. class:: center
-
 .. image:: images/adhesion_desc_stats.png
   :width: 800
   :alt: Sample descriptive statistics from adhesion application
 
 *Descriptive statistics for all images or samples within dataset*
-
-.. class:: center
 
 .. image:: images/adhesion_parameters.png
   :width: 500
@@ -76,23 +72,17 @@ Tabular data includes:
 
 Graphical results as .png images:
 
-.. class:: center
-
 .. image:: images/adhesion_graphs.png
   :width: 300
   :alt: Sample graphs from adhesion application
 
 *Metrics plotted for easy, quick interpretation*
 
-.. class:: center
-
 .. image:: images/adhesion_pairplots.png
   :width: 400
   :alt: Sample pairplots from adhesion application
 
 *Pairplots for quick interpretation of relationships between variables*
-
-.. class:: center
 
 .. image:: images/adhesion_color_pairplots.png
   :width: 500
@@ -102,11 +92,11 @@ Graphical results as .png images:
 
 The initial imaging dataset as transformed by the image processing algorithms and/or labeled with indices. Videos are returned as individual, sequentially numbered frames:
 
-.. class:: center
-
 .. image:: images/adhesion_labeled.png
   :width: 400
   :alt: Sample image labeling
+
+.. class:: left
 
 *Images are labeled with indices corresponding to the Excel sheet*
 
