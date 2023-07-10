@@ -18,5 +18,5 @@ Contents
    getting_started
    adhesion
    singlecelltracking
-   acccumulation_occlusion
+   accumulation_occlusion
    software_information
