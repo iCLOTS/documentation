@@ -50,8 +50,6 @@ Tabular data as an Excel file. In applications where several files are analyzed,
 
 Tabular data includes:
 
-.. class:: center
-
 .. image:: images/adhesion_metrics.png
   :width: 600
   :alt: Sample metrics from adhesion application
@@ -95,8 +93,6 @@ The initial imaging dataset as transformed by the image processing algorithms an
 .. image:: images/adhesion_labeled.png
   :width: 400
   :alt: Sample image labeling
-
-.. class:: left
 
 *Images are labeled with indices corresponding to the Excel sheet*
 
