@@ -1,7 +1,7 @@
 Video editing tools
 ==========================================
 
-| iCLOTS provides a suite of video and image file editing tools to help users format their data for iCLOTS analysis. Briefly, users select a single file or a folder of .png, .jpg, .tif, and/or .avi files for modification. Users may need to perform some operation or edit indicated parameters, some image processing step is applied, and all edited files are returned in a new directory within the original folder. 
+| Each iCLOTS application requires a specific type of file to analyze, whether that's an image, series of images, or a video. Some videos or images may not be suitable for analysis as-is and could benefit from additional image manipulation. iCLOTS provides a suite of video and image file editing tools to help users format their data for iCLOTS analysis. Briefly, users select a single file or a folder of .png, .jpg, .tif, and/or .avi files for modification. Users may need to perform some operation or edit indicated parameters, some image processing step is applied, and all edited files are returned in a new directory within the original folder. 
 
 .. _choose roi:
 
