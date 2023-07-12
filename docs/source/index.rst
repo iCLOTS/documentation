@@ -1,4 +1,4 @@
-Welcome to iCLOTS's documentation!
+Welcome to iCLOTS' documentation!
 ===================================
 
 **iCLOTS** is an open source software for cellular microscopy image analysis, with a special focus on analysis of cell microscopy data, especially those that incorporate microfluidic devices or flow chambers that apply fluidic forces. Completely standalone, it requires no coding experience and offers a simple and intuitive interactive GUI interface.
