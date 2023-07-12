@@ -19,4 +19,6 @@ Contents
    adhesion
    singlecelltracking
    accumulation_occlusion
+   velocity
+   video_editing
    software_information
