@@ -1,4 +1,4 @@
-Machine Learning-enabled Interpretation
+Machine learning-enabled interpretation
 ==========================================
 
 | iCLOTS may generate large datasets, depending on file inputs. Should users need additional interpretation of these large datasets, our machine learning application mathematically characterizes natural groupings within any number of pooled datasets, proving useful for detecting cell sample subpopulations or healthy/clinical sample differences. Methods to apply k-means clustering are provided.
