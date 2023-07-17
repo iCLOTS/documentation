@@ -21,4 +21,6 @@ Contents
    accumulation_occlusion
    velocity
    video_editing
+   machine_learning
+   reporting_results
    software_information
