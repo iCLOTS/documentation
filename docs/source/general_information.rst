@@ -30,7 +30,7 @@ Image processing capabilities are separated into four main categories, with sub-
 * Velocity profile applications, useful for investigating rheological properties of suspensions under flow. Minimum, mean, and maximum velocity values for each video frame are also provided, suitable for monitoring changes in cell suspension speed.
 * Multiscale microfluidic accumulation applications, useful for insight into pathologic processes such as occlusion and obstruction in thrombosis.
 
-| A suite of file pre-processing applications assists users with preparing their data for analysis. Type of file required is specific to each application and is provided in the documentation below.
+| A suite of file pre-processing applications assists users with preparing their data for analysis. Type of file required is specific to each application and is provided within the documentation for specific applications.
 
 .. _outputs:
 
@@ -46,7 +46,7 @@ Each application produces detailed output files specific to the application used
 
 **Output files include:**
 
-Tabular data as an Excel file. In applications where several files are analyzed, individual sheets are named after individual files. These file names may be cropped to about 15 characters to prevent corrupting the output file. Please make sure individual files within a folder are named sufficiently differently.
+Tabular data as an Excel file. In applications where several files are analyzed, individual sheets are named after individual files. These file names may be cropped to about 15 characters to prevent corrupting the output file. Please make sure individual image or video files within a folder are named sufficiently differently.
 
 Tabular data includes:
 
@@ -135,7 +135,7 @@ Users should consider practical experimental design concerns before use.
 
 Choosing cell concentration:
 
-* For all experiments involving quantification of single cell events, in our experimental and software testing we chose cell concentrations or hematocrits to ensure that we could operate within a quantifiable dynamic range of the microfluidic devices for both healthy or untreated controls and experimental samples. iCLOTS in its current iteration cannot distinguish between overlapping cell events. Typically we perform an initial experiment with a range of cell concentrations such that the most adhesive samples can adhere without overlap, then use this concentration for all future experiments.
+* For all experiments involving quantification of single cell events, in our experimental and software testing we chose cell concentrations or hematocrits to ensure that we could operate within a quantifiable dynamic range of the microfluidic devices for both healthy or untreated controls and experimental samples. iCLOTS in its current iteration cannot distinguish between overlapping cell events. When you're choosing parameters, each cell should be represented by one dot. Typically we perform an initial experiment with a range of cell concentrations such that the most adhesive samples can adhere without overlap, then use this concentration for all future experiments.
 
 Choosing brightfield illumination vs. fluorescence microscopy:
 
