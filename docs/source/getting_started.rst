@@ -14,7 +14,7 @@ Getting started
 Downloading and opening iCLOTS in Mac OS
 ------------------------------------------
 
-| On Mac OS, users click the tar.gz distribution file available `on our software page <https://www.iclots.org/software>`_ to open, then click the .app file to start the software.
+| On Mac OS, users click the tar.gz distribution file available `on our software page <https://github.com/iCLOTS/iCLOTS/releases/>`_ to open, then click the .app file to start the software.
 
 | iCLOTS .app file has been developed on Mac OS Monterrey version 12.5.1, but has been tested on other Mac OS, including Catalina and Ventura. 
 
@@ -32,6 +32,8 @@ Downloading and opening iCLOTS in Mac OS
 
 Downloading and opening iCLOTS in Windows OS
 ---------------------------------------------
+
+| On Windows OS, users click the .exe distribution file available `on our software page <https://github.com/iCLOTS/iCLOTS/releases/>`_ to download, then click again to start the software.
 
 | iCLOTS .exe file has been developed on Windows version 11, but has been tested on other Windows versions, including Windows version 10.
 
