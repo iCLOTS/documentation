@@ -3,6 +3,11 @@ Multi-scale accumulation and occlusion
 
 | Our accumulation- and occlusion-based image processing applications are designed to be multi-scale to fit a variety of researcher's needs. Accumulation and occlusion, the aggregation or adhesion of cells/biomolecules on biological substrates and/or microvessels, has important implications for many diseases. 
 
+.. image:: images/menu_occ.png
+  :width: 200
+  :alt: Occlusion applications menu
+  :align: center
+
 Here, up to three fluorescence microscopy selected image  color channels (red, green, and/or blue) from a single image or a time series image sequence are binarized using user-defined thresholds. 
 
 .. image:: images/occ_colors.png
