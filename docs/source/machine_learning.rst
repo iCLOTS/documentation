@@ -10,10 +10,6 @@ Post-processing clustering algorithm application
 
 | This machine learning application applies clustering algorithms to any properly-formatted data, including iCLOTS data. Typically, a series of data points (e.g., cells) are represented by multiple metrics (e.g. velocity, size, or fluorescence intensity). Clustering is an unsupervised machine learning technique designed to mathematically characterize natural groupings within datasets (e.g., cell subpopulations from a single dataset or healthy-clinical dichotomies).
 
-.. image:: images/help_ml.png
-  :width: 400
-  :alt: Machine learning help documentation
-  :align: center
 
 | The iCLOTS development team suggests the `review paper <https://www.nature.com/articles/s41580-021-00407-0>`_ "A guide to machine learning for biologists" (Greener, Nature Reviews Molecular Cell Biology, 2021) for a better understanding of machine learning. Please also see this documentation's guidance on reporting computational results.
 
@@ -25,11 +21,6 @@ Step 1: load data
 * File loading is set up such that user selects a folder that contains all relevant excel sheets.
 * Your files may fail to load correctly if they are already open in Excel. This application will read temporary files created by having the file open. Please close any workbooks you're using before selecting a folder of files.
 
-.. image:: images/ml_step1.png
-  :width: 400
-  :alt: Machine learning step 1
-  :align: center
-
 Step 2: select features
 
 * After data is loaded, all datasets are combined into one "pool." Clustering is an unsupervised algorithm: no "labels" such as sample names are considered during clustering. Later outputs do provide the number of sample data points found in each cluster.
@@ -37,21 +28,11 @@ Step 2: select features
 * A correlation matrix is automatically displayed. A correlation matrix is a visualization of how much each pairwise combination of variables is correlated, or related. Highly related variables (value approaching -1 or 1) may bias results, e.g. considering both area (pix) and area (µm²) gives area undue influence on clustering.
 * In this step, users have the option to select what metrics they would like to retain for final analysis.
 
-.. image:: images/ml_step2.png
-  :width: 400
-  :alt: Machine learning step 2
-  :align: center
-
 Step 3: select number of clusters to retain
 
 * After features are selected and submitted, a scree plot is generated. A scree plot indicates a suggested optimal number of mathematically significant clusters to retain.It is presented as a line plot of the sum of squared errors (SSE) of the distance to the closest centroid for all data points for each number of potential clusters (iCLOTS allows up to 12 clusters). Typically, as the number of clusters increases, the variance, or sum of squares, for each cluster group decreases.
 * The "elbow" point of the graph represents the best balance between minimizing the number of clusters and minimizing the variance in each cluster.
 * The user can choose any number of clusters to group data into using the clustering algorithm.
-
-.. image:: images/ml_step3.png
-  :width: 400
-  :alt: Machine learning step 3
-  :align: center
 
 Step 4: k-means clustering algorithms are applied
 
@@ -59,32 +40,12 @@ Step 4: k-means clustering algorithms are applied
 * Several types of clustering algorithms exist, but a k-means algorithm was selected for iCLOTS v0.1.1 as it is understood to be a robust general-purpose approach to discovering natural groupings within high-dimensional data.
 * The pooled data points are automatically partitioned into clusters that minimize differences between shared metrics.
 
-.. image:: images/ml_step4.png
-  :width: 400
-  :alt: Machine learning step 4
-  :align: center
-
 Step 5: review outputs
 
 * iCLOTS creates a series of graphs:
   
   * A mosaic plot, a specialized stacked bar chart, displays the number of stacked data points from each dataset in each of the clusters. This is designed to assist the user in visualizing the contribution of each dataset to each cluster.
   * A pair plot, a pairwise series of scatterplots and histograms, shows each dataset (marker type) and cluster (color).
-
-.. image:: images/ml_graph3.png
-  :width: 400
-  :alt: Machine learning graph
-  :align: center
-
-.. image:: images/ml_graph4.png
-  :width: 400
-  :alt: Machine learning graph
-  :align: center
-
-.. image:: images/ml_graph5.png
-  :width: 400
-  :alt: Machine learning graph
-  :align: center
   
 * An excel file with all data points is also created:
   
@@ -92,20 +53,6 @@ Step 5: review outputs
   * Descriptive statistics for clusters, cluster label count per dataset, cluster number, and silhouette score are also included.
   * Silhouette score is a metric with a value from -1 (inappropriate clusters) to 1 (best clustering)
 
-.. image:: images/ml_sum1.png
-  :width: 400
-  :alt: Machine learning numerical data
-  :align: center
-
-.. image:: images/ml_sum3.png
-  :width: 200
-  :alt: Machine learning numerical data
-  :align: center
-
-.. image:: images/ml_sum4.png
-  :width: 100
-  :alt: Machine learning silhouette score
-  :align: center
 
 Some tips from the iCLOTS team:
 

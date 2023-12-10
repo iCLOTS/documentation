@@ -12,11 +12,6 @@ Brightfield microscopy adhesion
 
 | Application that analyzes static, brightfield images of cells or multicellular structures adhered to some surface. May also be suitable for use with preliminary digital pathology approaches, e.g. with blood smears. This application does not separate cells by type, but you could use the post-processing machine learning clustering algorithm to group cells.
 
-.. image:: images/adh_bf_display.png
-  :width: 800
-  :alt: Application window for brightfield adhesion application
-  :align: center
-
 Input files:
 
 * This application is designed to analyze a single image or a folder of image files (.jpg, .png, and/or .tif).
@@ -29,11 +24,6 @@ Parameters to interactively adjust:
 * µm-to-pixel ratio: The ratio of microns (1e-6 m) to pixels for the image, used to convert pixel measurements into area or distance dimensions. Use 1 for no conversion.
 * Maximum diameter: The maximum diameter of a cell to be detected (pixels), must be set as an odd integer to work with the analysis algorithms.
 * Minimum intensity: Minimum summed intensity of a cell to be detected (a.u.).
-
-.. image:: images/adh_bf_parameters.png
-  :width: 200
-  :alt: Parameters for brightfield adhesion application
-  :align: center
 
 
 Output metrics:
@@ -48,11 +38,6 @@ Output files:
 * All files are saved in a new folder titled "Results," located within the folder the original imaging data was selected from. Time and date are included in the folder name to identify when the analysis was performed and distinguish between different analyses.
 * Labeled imaging data: each original image with each detected cell labeled with an index. Each index corresponds to single-cell data within the optional numerical data exports.
 
-.. image:: images/adh_bf_img.png
-  :width: 400
-  :alt: Labeled image from brightfield adhesion application
-  :align: center
-
 An Excel file containing:
 
 * Area and circularity for each cell - one sheet/image.
@@ -60,31 +45,11 @@ An Excel file containing:
 * Descriptive statistics (minimum, mean, maximum, standard deviation values for area and circularity) for individual files and combined files. Cell density (n/mm²) is also provided.
 * Parameters used and time/date analysis was performed, for reference.
 
-.. image:: images/adh_bf_num.png
-  :width: 600
-  :alt: Output numerical data from brightfield adhesion application
-  :align: center
-
-.. image:: images/adh_sum.png
-  :width: 800
-  :alt: Output summary numerical data for adhesion applications
-  :align: center
-
 Graphical data:
 
 * Histogram graphs for area and circularity for each individual image.
 * Pairplot graph for each individual image, for all images combined where one color represents all pooled data, and for all images combined where each color represents a different image file.
 * Pairplot including area and circularity metrics.
-
-.. image:: images/adh_bf_graph1.png
-  :width: 400
-  :alt: Graphical output from brightfield ahdesion application
-  :align: center
-
-.. image:: images/adh_bf_graph2.png
-  :width: 600
-  :alt: Graphical output from brightfield adhesion application
-  :align: center
 
 
 Some tips from the iCLOTS team:
@@ -128,21 +93,11 @@ Fluorescence microscopy adhesion
 
 | Application that analyzes static, fluorescence microscopy images of cells (tested extensively on platelets, RBCs, and WBCs) adhered to some surface. This application does not separate cells by type, but you could use the post-processing machine learning clustering algorithm to group cells.
 
-.. image:: images/adh_fl_display.png
-  :width: 800
-  :alt: Application window for fluorescence adhesion application
-  :align: center
-
 Input files:
 
 * This application is designed to analyze a single image or a folder of image files (.jpg, .png, and/or .tif)
 * The same input parameters are applied to each image.
 * Users are lead to select color channels for analysis, including: a membrane stain (red, green, blue, or grayscale/white), which typically represents the area/morphology of a cell and a secondary "functional" stain (red, green, or blue - cannot be the same color as the membrane stain), which is an optional additional color channel that typically represents some activity or characteristic.
-
-.. image:: images/adh_fl_colors.png
-  :width: 200
-  :alt: Selecting colors for fluorescence microscopy adhesion application
-  :align: center
 
 
 Parameters to interactively adjust:
@@ -153,10 +108,6 @@ Parameters to interactively adjust:
 * Membrane stain threshold: Integer between 0 (black) and 255 (white/brightest) to be used for the main channel threshold. Any value below this threshold becomes background. Any value greater than or equal to this threshold becomes signal to further quantify.
 * Secondary stain threshold: like the membrane stain threshold, but for the functional/characteristic stain.
 
-.. image:: images/adh_fl_parameters.png
-  :width: 200
-  :alt: Parameters to adjust for fluorescence microscopy adhesion application
-  :align: center
 
 Output metrics:
 
@@ -168,20 +119,11 @@ Output metrics:
 
 * Metrics from functional stain: binary positive/negative stain, total fluorescence intensity of functional stain per cell (a.u.).
 
+
 Output files:
 
 * All files are saved in a new folder titled "Results," located within the folder the original imaging data was selected from.
 * Labeled imaging data: each original image with each detected cell labeled with an index. Each index corresponds to single-cell data within the optional numerical data exports.
-
-.. image:: images/adh_fl_img1.png
-  :width: 400
-  :alt: Output image from fluorescence microscopy adhesion application
-  :align: center
-
-.. image:: images/adh_fl_img2.png
-  :width: 400
-  :alt: Output image from fluorescence microscopy adhesion application
-  :align: center
 
 * An Excel file containing:
 
@@ -190,30 +132,11 @@ Output files:
   * Descriptive statistics (minimum, mean, maximum, standard deviation values for area, circularity, texture, and functional stain metrics) for individual files and combined files. Cell density (n/mm²) is also provided.
   * Parameters used and time/date analysis was performed, for reference.
 
-.. image:: images/adh_fl_num.png
-  :width: 800
-  :alt: Output nuaerical dat from fluorescence microscopy adhesion application
-  :align: center
-
 Graphical data:
 
 * Histogram graphs for area and circularity and a positive/negative functional stain pie chart for each individual image.
 * Pairplot graph for each individual image, for all images combined where one color represents all pooled data, and for all images combined where each color represents a different image file.
 
-.. image:: images/adh_fl_graph1.png
-  :width: 400
-  :alt: Output graph from fluorescence microscopy adhesion application
-  :align: center
-
-.. image:: images/adh_fl_graph2.png
-  :width: 600
-  :alt: Output graph from fluorescence microscopy adhesion application
-  :align: center
-
-.. image:: images/adh_fl_graph3.png
-  :width: 600
-  :alt: Output graph from fluorescence microscopy adhesion application
-  :align: center
 
 Some tips from the iCLOTS team:
 
@@ -256,10 +179,6 @@ Filopodia and protrusion counter
 
 | iCLOTS includes a specialized version of the fluorescence microscopy application designed to count and characterize filopodia at single-cell resolution. The Lam lab has found that it can be hard to objectively count filopodia. iCLOTS applies the same parameters (how distinct a filopodia must be, minimum distance from other leading edges) to an image or series of images to reduce this objectivity. Number of filopodia per cell and descriptive statistics describing filopodia length per cell (minimum, mean, maximum, standard deviation) are reported in addition to cell area and membrane texture.
 
-.. image:: images/adh_fil_display.png
-  :width: 800
-  :alt: Application display window for filopodia counting application
-  :align: center
 
 Input files:
 
@@ -267,11 +186,6 @@ Input files:
 * The same input parameters are applied to each image.
 * Users are lead to select a color channel that indicates the cell membrane or area/morphology (red, green, blue, or grayscale/white).
 * Future versions of iCLOTS will also incorporate methods for quantifying a secondary stain indicating some biological character or process as well.
-
-.. image:: images/adh_fil_colors.png
-  :width: 200
-  :alt: Color to select for filopodia counting application
-  :align: center
 
 Parameters to interactively adjust:
 
@@ -285,10 +199,6 @@ Parameters to interactively adjust:
   * Relative intensity: arbitrary unit parameter  representing the minimum intensity of "peaks," calculated as the maximum value within the image multiplied by this relative threshold.
   * Minimum distance: minimum distance between detected filopodia (pix), also used with the peak finding algorithm.
 
-.. image:: images/adh_fil_parameters.png
-  :width: 200
-  :alt: Parameters to adjust for filopodia counting application
-  :align: center
 
 Output metrics:
 
@@ -306,16 +216,6 @@ Output files:
 * All files are saved in a new folder titled "Results," located within the folder the original imaging data was selected from.
 * Labeled imaging data: each original image and each image with the membrane threshold applied with each detected cell labeled with an index. Each index corresponds to single-cell data within the optional numerical data exports.
 
-.. image:: images/adh_fil_img1.png
-  :width: 600
-  :alt: Imaging data from filopodia counting application
-  :align: center
-
-.. image:: images/adh_fil_img2.png
-  :width: 600
-  :alt: Imaging data from filopodia counting application
-  :align: center
-
 An Excel file containing:
 
 * Area, circularity, texture, and filopodia metrics for each cell - one sheet/image.
@@ -323,30 +223,10 @@ An Excel file containing:
 * Descriptive statistics (minimum, mean, maximum, standard deviation values for area, circularity, texture, and filopodia metrics) for individual files and combined files. Cell density (n/mm²) is also provided.
 * Parameters used and time/date analysis was performed, for reference.
 
-.. image:: images/adh_fil_num.png
-  :width: 800
-  :alt: Numerical data from filopodia counting application
-  :align: center
-
 Graphical data:
 
 * Histogram graphs for filopodia per cell and mean filopodia length for each individual image.
 * Pairplot graph for each individual image, for all images combined where one color represents all pooled data, and for all images combined where each color represents a different image file.
-
-.. image:: images/adh_fil_graph1.png
-  :width: 400
-  :alt: Graphical data from filopodia counting application
-  :align: center
-
-.. image:: images/adh_fil_graph2.png
-  :width: 600
-  :alt: Graphical data from filopodia counting application
-  :align: center
-
-.. image:: images/adh_fil_graph3.png
-  :width: 600
-  :alt: Graphical data from filopodia counting application
-  :align: center
 
 Some tips from the iCLOTS team:
 
@@ -397,11 +277,6 @@ Transient adhesion
 
 | This application tracks one or many cells within a frame using adapted Crocker and Grier particle tracking methods. Cells are linked into individual trajectories. Cells can travel in any direction(s).Typically this application would be used to track cells transiting a microfluidic device, but other uses may be possible. This application will work for both brightfield and fluorescence microscopy applications, but no fluorescence intensity data is provided in the current iCLOTS release.
 
-.. image:: images/adh_vid_display.png
-  :width: 800
-  :alt: Application interface from video adhesion
-  :align: center
-
 Input files:
 
 * This application is designed to analyze a single video (.avi)
@@ -411,11 +286,6 @@ Input files:
 * Users can optionally choose a region of interest from the video for analysis. Currently, regions of interest are selected using a draggable rectangle. Later versions of iCLOTS will incorporate options for ROIs of other shapes.
 * Users are lead to select an "invert" setting for analysis: you can indicate that you would like to look for dark cells on a light background, or light cells on a dark background.
 
-.. image:: images/adh_vid_roi.png
-  :width: 300
-  :alt: Selecting a region of interest for video adhesion application
-  :align: center
-
 Parameters to interactively adjust:
 
 * µm-to-pixel ratio: The ratio of microns (1e-6 m) to pixels for the image, used to convert pixel measurements into area or distance dimensions. Use 1 for no conversion.
@@ -423,11 +293,6 @@ Parameters to interactively adjust:
 * Minimum intensity: Minimum summed intensity of a cell to be detected (a.u.). Can be used help filter our obvious noise, debris, or clumped cells.
 * Maximum intensity: Maximum summed intensity of a cell to be detected (a.u.). Can be used to help filter out obvious noise, debris, or clumped cells.
 * Frames per second (FPS): the rate  of imaging, a microscopy parameter. Note that FPS values pulled  directly from videos can be inaccurate, especially if the video has been resized or edited in any way. Higher FPS imaging settings provide more precise distance and transit time values.
-
-.. image:: images/adh_vid_parameters.png
-  :width: 200
-  :alt: Application parameters to adjust from video adhesion
-  :align: center
 
 Output metrics:
 
@@ -449,25 +314,6 @@ Output files:
 
 * Graphical data: histogram graphs for area, circularity, and transit time for the complete video and a pairplot graph.
 
-.. image:: images/adh_vid_img.png
-  :width: 400
-  :alt: Image outputs from video adhesion application
-  :align: center
-
-.. image:: images/adh_vid_num.png
-  :width: 600
-  :alt: Numerical outputs from video adhesion application
-  :align: center
-
-.. image:: images/adh_vid_graph1.png
-  :width: 300
-  :alt: Graphical outputs from video adhesion application
-  :align: center
-
-.. image:: images/adh_vid_graph2.png
-  :width: 600
-  :alt: Graphical outputs from video adhesion application
-  :align: center
 
 Some tips from the iCLOTS team:
 
