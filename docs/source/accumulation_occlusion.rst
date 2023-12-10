@@ -1,21 +1,7 @@
 Multi-scale accumulation and occlusion
 ==========================================
 
-| Our accumulation- and occlusion-based image processing applications are designed to be multi-scale to fit a variety of researcher's needs. Accumulation and occlusion, the aggregation or adhesion of cells/biomolecules on biological substrates and/or microvessels, has important implications for many diseases. 
-
-.. image:: images/menu_occ.png
-  :width: 200
-  :alt: Occlusion applications menu
-  :align: center
-
-Here, up to three fluorescence microscopy selected image  color channels (red, green, and/or blue) from a single image or a time series image sequence are binarized using user-defined thresholds. 
-
-.. image:: images/occ_colors.png
-  :width: 200
-  :alt: Occlusion application colors
-  :align: center
-
-iCLOTS’ suite of multiscale microfluidic accumulation applications allows users to investigate occlusion on surfaces (a region of interest), in potentially complicated microfluidic vessel or channel geometries, or in small microvessels. 
+| Our accumulation- and occlusion-based image processing applications are designed to be multi-scale to fit a variety of researcher's needs. Accumulation and occlusion, the aggregation or adhesion of cells/biomolecules on biological substrates and/or microvessels, has important implications for many diseases. Here, up to three fluorescence microscopy selected image  color channels (red, green, and/or blue) from a single image or a time series image sequence are binarized using user-defined thresholds. iCLOTS’ suite of multiscale microfluidic accumulation applications allows users to investigate occlusion on surfaces (a region of interest), in potentially complicated microfluidic vessel or channel geometries, or in small microvessels. 
 
 .. _roi:
 
@@ -23,11 +9,6 @@ Region of interest image processing
 -------------------------------------------
 
 | This scale is used to analyze accumulation and occlusion as indicated by fluorescence microscopy signal in any square region of interest selected by the user. The iCLOTS manuscript demonstrates use of this application with a small region from a commercially-available ibidi device.
-
-.. image:: images/occ_surf_display.png
-  :width: 800
-  :alt: Application window for ROI-level occlusion application
-  :align: center
 
 Input files:
 
@@ -42,22 +23,12 @@ Input parameters:
 * µm-to-pixel ratio: The ratio of microns (1e-6 m) to pixels for the image. Use value = 1 for no conversion.
 * Red, green, and/or blue threshold(s). Users may select which color channel(s) they would like to analyze. After channel selection, a spinbox to choose a threshold for each channel appears.
 
-.. image:: images/occ_parameters.png
-  :width: 200
-  :alt: Parameters for occlusion applications
-  :align: center
-
 Output files:
 
 * All files are saved in a new folder titled "Results," located within the folder the original imaging data was selected from. Time and date are included in the folder name to identify when the analysis was performed and distinguish between different analyses.
 * Several images are returned: the ROI from each frame and all frames with image processing (threshold) steps applied.
 * A corresponding .xlsx sheet for each selected color channel containing mean occlusion (%) and accumulation (area) for each frame. To convert accumulation per frame into per timepoint, divide frame number by FPS imaging rate.
 * Occlusion/accumulation graph: for the time series, a line graph showing occlusion (titled, left) and accumulation (titled, right) for each color.
-
-.. image:: images/occ_num1.png
-  :width: 800
-  :alt: Output numerical data from occlusion application
-  :align: center
 
 Some tips from the iCLOTS team:
 
@@ -92,11 +63,6 @@ Image processing for a microfluidic device with complex geometry
 
 | This scale of the accumulation and occlusion application is used to analyze accumulation and occlusion as indicated by fluorescence microscopy signal in a microfluidic device with complex geometry. Only the region of device indicated by a channel stain or the summed signal from a time course is quantified. The iCLOTS manuscript demonstrates use of this application with a branching microfluidic device.
 
-.. image:: images/occ_dev_display.png
-  :width: 800
-  :alt: Application window for device-scale occlusion application
-  :align: center
-
 Input files:
 
 * This application is designed to work with a single image or a folder of images describing timeseries data (.jpg, .png, and/or .tif).
@@ -104,11 +70,6 @@ Input files:
 * After uploading one or several images, the user is prompted to choose an ROI from the first image.
 * The same ROI is applied to all images, take care that all images represent the same field of view.
 * It's important that frames are labeled sequentially in timeseries order.
-
-.. image:: images/occ_dev_roi.png
-  :width: 600
-  :alt: Selecting ROI for device-level occlusion analysis
-  :align: center
 
 Input parameters:
 
@@ -121,16 +82,6 @@ Output files:
 * Images include the selected ROI from each frame, the "map" used - the channel region(s) as detected, and all frames with image processing (threshold) steps applied. Images also include each selected color as detected by the set threshold overlaid on the channel map (white color) for each color channel.
 * A corresponding .xlsx sheet containing mean occlusion (%) and accumulation (area) per frame for each color channel selected. To convert accumulation per frame into per timepoint, divide frame number by FPS imaging rate.
 * An occlusion and accumulation graph: for the time series, a line graph showing occlusion (titled, left) and accumulation (titled, right) for each selected color channel.
-
-.. image:: images/occ_dev_img2.png
-  :width: 400
-  :alt: Output image from device-level occlusion application
-  :align: center
-
-.. image:: images/occ_dev_graph1.png
-  :width: 400
-  :alt: Output graph from device-level occlusion application
-  :align: center
 
 Some tips from the iCLOTS team:
 
@@ -171,22 +122,12 @@ Image processing for a microfluidic microchannels
 
 This scale of the accumulation and occlusion application is used to analyze accumulation and occlusion as indicated by fluorescence microscopy signal in a series of straight microchannel(s) within some larger device. This sub-application provides spatial information on where cells have occluded a channel. Individual channels as indicated by a channel stain or left-right extension of the summed signal from a frame are quantified. The iCLOTS manuscript demonstrates use of this application with a set of 32 of the smallest channels within a branching microfluidic device. 
 
-.. image:: images/occ_micro_display.png
-  :width: 800
-  :alt: Application window for microchannel-scale occlusion application
-  :align: center
-
 Input files:
 
 * This application is designed to work with a single image or a folder of images describing timeseries data (.jpg, .png, and/or .tif).
 * The same input parameters are applied to each image.
 * Each image should consist of one or many straight portions of a microfluidic device.
 * After uploading one or several images, the user is prompted to choose an ROI from the first image. This ROI should contain the straight channel portions. The same ROI is applied to all images, take care that all images represent the same field of view. The algorithm relies on left-to-right indexing to form the channel regions to analyze. As such, channels should be perfectly horizontal. iCLOTS provides a video-editing rotation tool that does not affect aspect ratio. In order to create a complete channel area to analyze, some fluorescence signal must be present at every y pixel of the channel. Staining the channels, or some feature of the channel, like a cell layer, helps with this.
-
-.. image:: images/occ_micro_roi.png
-  :width: 600
-  :alt: Selecting ROI for microchannel-level occlusion application
-  :align: center
 
 Input parameters:
 
@@ -207,30 +148,6 @@ Output files:
 
 * An occlusion/accumulation graph for the time series, showing: occlusion (titled, left) and accumulation (titled, right) for each channel (light lines) and mean (dark lines) for each color.
 
-.. image:: images/occ_micro_img5.png
-  :width: 100
-  :alt: Output image from microchannel-level occlusion application
-  :align: center
-
-.. image:: images/occ_micro_graph.png
-  :width: 400
-  :alt: Output graph from microchannel-level occlusion application
-  :align: center
-
-.. image:: images/occ_micro_num1.png
-  :width: 800
-  :alt: Numerical data describing spatial signal from microchannels
-  :align: center
-
-.. image:: images/occ_micro_num2.png
-  :width: 600
-  :alt: Numerical data describing per-channel data from microchannels
-  :align: center
-
-.. image:: images/occ_micro_num3.png
-  :width: 600
-  :alt: Numerical data describing per-frame data from microchannels
-  :align: center
 Some tips from the iCLOTS team:
 
 * Computational and experimental methods:
