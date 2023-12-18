@@ -25,7 +25,6 @@ Downloading and opening iCLOTS in Mac OS
 .. image:: images/mac_warning.png
   :width: 600
   :alt: Mac OS potential warning
-  :align: center
 
 | During testing, all software users received and accepted these messages, with no negative effect to their computers.
 
@@ -47,6 +46,5 @@ Downloading and opening iCLOTS in Windows OS
 .. image:: images/windows_warning.png
   :width: 800
   :alt: Windows OS potential warnings
-  :align: center
 
 | During testing, all software users received and accepted these messages, with no negative effect to their computers.
